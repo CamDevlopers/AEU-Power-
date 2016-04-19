@@ -1,0 +1,132 @@
+/* Template-specific stuff
+ *
+ * Customizations just for the template; these are not necessary for anything
+ * with disabling the responsiveness.
+ */
+
+/* Account for fixed navbar */
+body {
+  
+  padding-bottom: 30px;
+}
+
+body,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  
+}
+
+/* Don't let the lead text change font-size. */
+.lead {
+  font-size: 16px;
+}
+
+/* Finesse the page header spacing */
+.page-header {
+  margin-bottom: 30px;
+}
+.page-header .lead {
+  margin-bottom: 10px;
+}
+
+
+/* Non-responsive overrides
+ *
+ * Utilize the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+.container {
+  width: 645px;
+  margin: 0 auto;
+ 
+}
+
+/* Demonstrate the grids */
+.col-xs-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+
+.col-xs-9 {
+  padding: 10px;
+  float: left;
+  width: 480px;
+}
+
+.col-xs-3 {
+  float: left;
+}
+
+.send_box {
+  float: left;
+  width: 200px;
+  background-color: #fff;
+    border: 4px solid #ccc;
+    height: 180px;
+    margin: 3px;
+    -webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+
+.lamp1 {
+  float: left;
+  width: 92px;
+  background-color: #fff;
+    border: 4px solid #ccc;
+    height: 80px;
+    margin: 3px;
+    -webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 2px 10px 2px 11px;
+  border: 0;
+  text-decoration: none;
+}
+
+.btn_off {
+  background: #ccc;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 2px 10px 2px 11px;
+  border: 0;
+  text-decoration: none;
+}
+
+.btn:hover {
+
+  cursor: pointer;
+}
