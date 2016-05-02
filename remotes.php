@@ -25,7 +25,7 @@ if (!isset($_SESSION['login'])) {
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
-                //setTimeout(repeatAjax, 5000); //After completion of request, time to redo it after a second
+               setTimeout(repeatAjax, 10000); //After completion of request, time to redo it after a second
             }
         }
         xmlhttp.open("GET", "get_result_send.php", true);
@@ -63,7 +63,7 @@ if (!isset($_SESSION['login'])) {
         }
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                repeatAjax();
+               repeatAjax();
                 setTimeout(function() {
                     Update_airoff(id);
                 }, 1500);
